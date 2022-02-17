@@ -13,7 +13,7 @@ public class test16 {
 		HashMap<String, Integer> results = new HashMap<String, Integer>();
 		Workbook workbook = WorkbookFactory.create(new FileInputStream(args[0]));
 		Sheet sheet = workbook.getSheet(args[1]);
-		for (int i = 0; i < sheet.getLastRowNum(); i++) {
+		for (int i = 0; i <= sheet.getLastRowNum(); i++) {
 			Row row = sheet.getRow(i);
 			String A = getCellValue(row.getCell(0));
 			String B = getCellValue(row.getCell(1));
