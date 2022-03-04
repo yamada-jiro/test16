@@ -53,7 +53,10 @@ public class test17 {
 						continue;
 					}
 					String cellLocation = new CellReference(i, s).formatAsString();
-					System.out.println(sheetName + "\t" + cellLocation + "\t\"" + value1 + "\"\t\"" + value2 + "\"");
+					System.out.println(sheetName + "\t"
+							+ cellLocation + "\t\""
+							+ value1.replace("\"", "\"\"") + "\"\t\""
+							+ value2.replace("\"", "\"\"") + "\"");
 				}
 			}
 		}
